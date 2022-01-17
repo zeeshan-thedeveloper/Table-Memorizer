@@ -63,7 +63,7 @@
             android:text="Learn" />
 
         <Button
-            android:id="@+id/outlinedButton"
+            android:id="@+id/btn_about_app"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:outlineAmbientShadowColor="@color/black"

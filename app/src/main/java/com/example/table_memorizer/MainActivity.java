@@ -44,5 +44,10 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fragment_holder,new TrueFalse_Training_Fragment(this));
         fragmentTransaction.commit();
     }
+    public void setAboutApp(){
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.fragment_holder,new AboutApp_Fragment(this));
+        fragmentTransaction.commit();
+    }
 
 }
