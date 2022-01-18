@@ -27,7 +27,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="10dp"
         android:gravity="center"
-        android:text="Selecte the type of training"
+        android:text="Memory Training"
         android:textColor="#673AB7"
         android:textSize="34sp" />
 
