@@ -4,13 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/activity_main.xml" value="0.12771739130434784" />
-        <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_about_app_.xml" value="0.20153985507246377" />
+        <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_about_app_.xml" value="0.2" />
         <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_input__training_.xml" value="0.22" />
         <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_list_of_tables__for_learning_.xml" value="0.1234375" />
+        <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_show_table.xml" value="0.19519927536231885" />
         <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_start_screen_.xml" value="0.25" />
+        <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_table_trainer.xml" value="0.19519927536231885" />
         <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_training_options_screen_.xml" value="0.20153985507246377" />
         <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/fragment_true_false__training_.xml" value="0.1234375" />
-        <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/table_list_item.xml" value="0.1234375" />
+        <entry key="..\:/Andriod Projects/Table-Memorizer/app/src/main/res/layout/table_list_item.xml" value="0.33" />
       </map>
     </option>
   </component>
