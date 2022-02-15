@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import pl.droidsonroids.gif.GifImageView;
@@ -49,6 +50,17 @@ public class Input_Training_Fragment extends Fragment {
         AlertDialog.Builder inputDialog=new AlertDialog.Builder(mainActivity);
         inputDialog.setTitle("Result");
 
+        ImageView img_table_number=view.findViewById(R.id.img_table_number);
+        ImageView img_mul=view.findViewById(R.id.img_mul);
+        ImageView img_table_counter=view.findViewById(R.id.img_table_counter);
+        ImageView img_equal=view.findViewById(R.id.img_equal);
+
+        img_table_number.setImageResource(R.drawable.apple_count_five);
+        img_mul.setImageResource(R.drawable.multiply_sign);
+        img_table_counter.setImageResource(R.drawable.apple_count_two);
+        img_equal.setImageResource(R.drawable.equal_sign);
+
+
         Button btn_check = view.findViewById(R.id.btn_check_answer);
         btn_check.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,8 +82,55 @@ public class Input_Training_Fragment extends Fragment {
                                      }
                                      inputDialog.show();
                                      current_question_number[0]++;
-                                     if(current_question_number[0] < mainActivity.listOfObjectiveQuestions.size())
-                                     txt_question.setText(mainActivity.listOfObjectiveQuestions.get(current_question_number[0]).getQuestion());
+                                     if(current_question_number[0] < mainActivity.listOfObjectiveQuestions.size()) {
+                                         txt_question.setText(mainActivity.listOfObjectiveQuestions.get(current_question_number[0]).getQuestion());
+                                         switch (current_question_number[0]){
+                                             case 1:
+                                                 img_table_number.setImageResource(R.drawable.apple_count_ten);
+                                                 img_mul.setImageResource(R.drawable.multiply_sign);
+                                                 img_table_counter.setImageResource(R.drawable.apple_count_two);
+                                                 img_equal.setImageResource(R.drawable.equal_sign);
+
+                                                 break;
+                                             case 2:
+                                                 img_table_number.setImageResource(R.drawable.apple_count_four);
+                                                 img_mul.setImageResource(R.drawable.multiply_sign);
+                                                 img_table_counter.setImageResource(R.drawable.apple_count_five);
+                                                 img_equal.setImageResource(R.drawable.equal_sign);
+
+                                                 break;
+                                             case 3:
+                                                 img_table_number.setImageResource(R.drawable.apple_count_four);
+                                                 img_mul.setImageResource(R.drawable.multiply_sign);
+                                                 img_table_counter.setImageResource(R.drawable.apple_count_four);
+                                                 img_equal.setImageResource(R.drawable.equal_sign);
+
+                                                 break;
+                                             case 4:
+                                                 img_table_number.setImageResource(R.drawable.apple_count_siz);
+                                                 img_mul.setImageResource(R.drawable.multiply_sign);
+                                                 img_table_counter.setImageResource(R.drawable.apple_count_three);
+                                                 img_equal.setImageResource(R.drawable.equal_sign);
+
+                                                 break;
+                                             case 5:
+                                                 img_table_number.setImageResource(R.drawable.apple_count_two);
+                                                 img_mul.setImageResource(R.drawable.multiply_sign);
+                                                 img_table_counter.setImageResource(R.drawable.apple_count_eight);
+                                                 img_equal.setImageResource(R.drawable.equal_sign);
+
+                                                 break;
+                                             case 6:
+                                                 img_table_number.setImageResource(R.drawable.apple_count_two);
+                                                 img_mul.setImageResource(R.drawable.multiply_sign);
+                                                 img_table_counter.setImageResource(R.drawable.apple_count_ten);
+                                                 img_equal.setImageResource(R.drawable.equal_sign);
+
+                                                 break;
+
+
+                                         }
+                                     }
                                      gifImageView.setVisibility(View.GONE);
                                  }
                              });

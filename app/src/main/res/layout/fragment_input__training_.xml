@@ -44,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
+
             android:orientation="vertical">
 
             <TextView
@@ -54,10 +55,51 @@
                 android:text="Question : 6X4 = ?"
                 android:textSize="34sp" />
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_margin="20dp">
+                <ImageView
+                    android:id="@+id/img_table_number"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/apple_count_two" />
+
+                <ImageView
+                    android:id="@+id/img_mul"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/multiply_sign" />
+
+                <ImageView
+                    android:id="@+id/img_table_counter"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0"
+                    android:src="@drawable/apple_count_eight" />
+
+                <ImageView
+                    android:id="@+id/img_equal"
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:src="@drawable/equal_sign" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/qm"
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/question_mark" />
+
+            </LinearLayout>
+
             <EditText
                 android:id="@+id/txt_answer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
                 android:ems="10"
                 android:hint="Enter the answer"
                 android:inputType="textPersonName" />

@@ -53,13 +53,14 @@
 
             <TextView
                 android:id="@+id/textView6"
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Type Answer"
-                android:textStyle="bold"
-                android:layout_gravity="center_horizontal"
-                android:textSize="16sp" />
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Typing Answer"
+                android:textSize="16sp"
+                android:textStyle="bold" />
 
         </com.google.android.material.card.MaterialCardView>
 
@@ -69,6 +70,7 @@
             android:layout_marginTop="10dp"
             android:clickable="true"
             >
+
             <ImageView
                 android:id="@+id/img_true_false"
                 android:layout_width="175dp"
@@ -79,13 +81,15 @@
 
             <TextView
                 android:id="@+id/textView5"
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="True False"
-                android:layout_gravity="center_horizontal"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="True        False"
                 android:textSize="16sp"
                 android:textStyle="bold" />
+
         </com.google.android.material.card.MaterialCardView>
 
 

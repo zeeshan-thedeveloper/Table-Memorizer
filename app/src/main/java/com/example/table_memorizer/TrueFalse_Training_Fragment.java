@@ -67,8 +67,6 @@ public class TrueFalse_Training_Fragment extends Fragment {
             }
         });
 
-
-
         txt_question.setText(mainActivity.listOfTrueFalseQuestion.get(current_number_of_question[0]).getQuestion());
             txt_current_number_of_question.setText("Question Number : "+current_number_of_question[0]);
             btn_back.setOnClickListener(new View.OnClickListener() {
@@ -84,7 +82,8 @@ public class TrueFalse_Training_Fragment extends Fragment {
                     current_number_of_question[0]++;
                     if(current_number_of_question[0]<mainActivity.listOfTrueFalseQuestion.size()) {
                         txt_current_number_of_question.setText("Question Number : "+current_number_of_question[0]);
-                        txt_question.setText(mainActivity.listOfTrueFalseQuestion.get(current_number_of_question[0]).getQuestion());
+//                        txt_question.setText(mainActivity.listOfTrueFalseQuestion.get(current_number_of_question[0]).getQuestion());
+
                         if(mainActivity.listOfTrueFalseQuestion.get(current_number_of_question[0]).isAnswer()){
                             inputDialog.setTitle("Wrong Answer");
                             //Right answer
@@ -113,7 +112,6 @@ public class TrueFalse_Training_Fragment extends Fragment {
                             //Right answer
                             number_of_right_question[0]++;
                             txt_number_of_right_or_wrong.setText("Correct : "+ number_of_right_question[0] +"and Wrong : "+ number_of_wrong_question[0]);
-
                             inputDialog.setTitle("Right Answer");
                             inputDialog.show();
                         }else{

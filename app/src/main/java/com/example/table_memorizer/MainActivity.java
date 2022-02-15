@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public List<TrueFalseQuestionDataholder> listOfTrueFalseQuestion;
     public List<ListOfObjectiveQuestions> listOfObjectiveQuestions;
     public static int flag=0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,10 +35,10 @@ public class MainActivity extends AppCompatActivity {
         listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("5 X 2 = ?","10"));
         listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("10 X 2 = ?","20"));
         listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("4 X 5 = ?","20"));
-        listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("7 X 8 = ?","56"));
-        listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("10 X 3 = ?","30"));
-        listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("4 X 8 = ?","32"));
+        listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("4 X 4 = ?","16"));
+        listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("6 X 3 = ?","18"));
         listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("2 X 8 = ?","16"));
+        listOfObjectiveQuestions.add(new ListOfObjectiveQuestions("2 X 10 = ?","20"));
 
 
         getSupportActionBar().hide();
@@ -70,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.fragment_holder,new TrueFalse_Training_Fragment(this));
         fragmentTransaction.commit();
     }
+
     public void setAboutApp(){
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.fragment_holder,new AboutApp_Fragment(this));
@@ -79,31 +81,31 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction = fragmentManager.beginTransaction();
         switch (tableNumber){
             case 2:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.two));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.two,2));
             break;
             case 3:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.three));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.three,3));
                 break;
             case 4:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.four));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.four,4));
                 break;
             case 5:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.five));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.five,5));
                 break;
             case 6:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.six));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.six,6));
                 break;
             case 7:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.seven));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.seven,7));
                 break;
             case 8:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.eight));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.eight,8));
                 break;
             case 9:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.nine));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.nine,9));
                 break;
             case 10:
-                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.ten));
+                fragmentTransaction.replace(R.id.fragment_holder,new ShowTable(this,R.drawable.ten,10));
                 break;
         }
 
